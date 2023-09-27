@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-color: rgb(235, 240, 245);
+}
+
+header{
+    background-color: #fff;
+
+    border-bottom: 2px solid #aaaaaa;
+    box-shadow: 0 2px 3px #aaaaaa;
+}
+
+h1{
+
+    margin: 2px;
+
+    text-align: center;
+    color: rgb(127, 182, 255);
+}
+
+h2{
+    margin: 20px;
+
+    text-align: center;
+    color: #d8a5a5;
+}
+
+.qcm{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    align-items: center;
+}
+
+table{
+    width: 1200px;
+
+    margin: 40px 0;
+}
+
+tr{
+
+    margin: 8px;
+}
+
+td{
+    
+    height: 175px;
+}
+
+fieldset{
+
+    display: flex;
+    flex-direction: column;
+
+    height: 75%;
+    width: 90%;
+
+    padding: 10px;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid rgb(224, 224, 224);
+    border-width: 8px 3px;
+    border-radius: 15px;
+    background-color: #fff;
+    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+fieldset:hover{
+
+    transform: scale(0.95);
+
+    background-color: #f7f7f7;
+}
+
+legend{
+
+    font-family: 'Courier New', Courier, monospace
+}
+
+p, label{
+
+    margin: 3px;
+
+    font-family:'Times New Roman', Times, serif;
+}
+
+label{
+
+    font-weight: 600;
+}
+
+.retour{
+
+    height: 100px;
+    width: 80%;
+
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 15px;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.retour:hover{
+    background-color: rgb(236, 200, 184);
+}

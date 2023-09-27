@@ -22,7 +22,7 @@ nav{
 
     /**/
 
-    background-color: rgb(229, 247, 247);
+    background-color: rgb(51, 51, 51);
  
 }
 
@@ -40,12 +40,21 @@ nav li{
 
     display: flex;
 
-    height: 100%;
+    height: 50px;
     width: 80px;
 
-    margin: 0px 10px;
+    border: 5px 0;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(88, 88, 88);
+
+}
+
+nav li:hover{
+    height: 40px;
+
+    padding-bottom: 5px;
+
+    border-top: 5px solid rgb(182, 182, 182);
 }
 
 nav a{
@@ -58,7 +67,7 @@ nav a{
     align-items: center;
     justify-content: center ;
 
-    color: black;
+    color: rgb(182, 182, 182);
     text-decoration: none;
 
     /**/
