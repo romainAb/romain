@@ -38,8 +38,6 @@ body{
 }
 
 .core:hover{
-
-
     transform: scale(1.1);
 
     background-color: #d6d6d6;
