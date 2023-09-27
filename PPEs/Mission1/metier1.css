@@ -1,0 +1,70 @@
+body{
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+}
+
+header{
+
+	background-color: white;
+	height: 10%;
+
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	align-items: center;
+
+	font-size: 20px;
+
+	box-shadow: 0 1px 7px black;
+}
+
+.body{
+
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+
+	height: 500%;
+
+}
+
+
+
+.descMetier{
+
+	display: flex;
+	flex-direction: row;
+}
+
+.pGauche, .pDroite{
+
+	margin: 1%;
+
+	width:50%;
+	flex-direction: column;
+
+
+}
+
+.tableau{
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	align-items: center;
+}
+
+
+footer{
+
+
+	box-shadow: 0 1px 7px black;
+	border: 1px solid black;
+
+	height: 10%;
+	background-color: #ffffff;
+}
