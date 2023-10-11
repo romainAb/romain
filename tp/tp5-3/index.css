@@ -1,0 +1,23 @@
+.b1, .b2, .b3{
+    height: 400px;
+    width: 400px;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.b1{
+    float: left;
+    background-color: aliceblue;
+    
+}
+
+.b2{
+    float: left;
+    background-color: antiquewhite;
+}
+
+.b3{
+    clear: both;
+    background-color: aquamarine;
+}
