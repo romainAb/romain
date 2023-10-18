@@ -2,27 +2,72 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css"/>
 	<title>Index - Portfolio</title>
 </head>
 <body>
+
 	<nav>
+        <label for="menu-mobile" class="menu-mobile">Menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
         <ul>
-            <li><a href="tp/tp1-et-2/index.html" target="f1">tp 1 & 2</a></li>
-            <li><a href="tp/tp3-1/index.html" target="f1">tp 3-1</a></li>
-            <li><a href="tp/tp3-2/principale.html" target="f1">tp 3-2</a></li>
-            <li><a href="tp/tp3-3/index.html" target="f1">tp 3-3</a></li>
-            <li><a href="tp/tp4-1/index.html" target="f1">tp 4-1</a></li>
-            <li><a href="tp/tp4-2/index.html" target="f1">tp 4-2</a></li>
-            <li><a href="PPEs/Mission1/index.html" target="f1">Mission 1</a></li>
-            <li><a href="PPEs/Mission3/index.html" target="f1">Mission 3</a></li>
-            <li><a href="PPEs/Mission4/CV.html" target="f1">Mission 4</a></li>
+            <li class="menu-1"><a href="#">HTML & CSS</a>
+                <ul class="submenu">
+                    <li><a href="tp/tp1-et-2/index.html">TP 1 & 2</a></li>
+                    <li><a href="tp/tp3-1/index.html">TP 3-1</a></li>
+                    <li><a href="tp/tp3-2/principale.html">TP 3-2</a></li>
+                    <li><a href="tp/tp3-3/index.html">TP 3-3</a></li>
+                    <li><a href="tp/tp4-1/index.html">TP 4-1</a></li>
+                    <li><a href="tp/tp4-2/index.html">TP 4-2</a></li>
+                    <li><a href="tp/tp5-1/index.html">TP 5-1</a></li>
+                    <li><a href="tp/tp5-2/index.html">TP 5-2</a></li>
+                    <li><a href="tp/tp5-3/index.html">TP 5-3</a></li>
+                    <li><a href="tp/tp5-4/index.html">TP 5-4</a></li>
+                    <li><a href="tp/tp6-1/index.html">TP 6-1</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-2"><a href="#">Javascript</a>
+                <ul class="submenu">
+                    <li><a href="tp/tp6-2/index.html">TP 6-2</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-3"><a href="#">Bases de données</a>
+                <ul class="submenu">
+                </ul>
+            </li>
+
+            <li class="menu-4"><a href="#">PHP</a>
+                <ul class="submenu">
+                </ul>
+            </li>
+
+            <li class="menu-5"><a href="#">Missions</a>
+                <ul class="submenu">
+                    <li><a href="PPEs/Mission1/index.html">Mission 1</a></li>
+                    <li><a href="PPEs/Mission3/index.html">Mission 3</a></li>
+                    <li><a href="PPEs/Mission4/CV.html">Mission 4</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-6"><a href="#">Certifications</a>
+                <ul class="submenu">
+                    <li><a href="PPEs/Certifications/Certificat_1.pdf">Module 1 RGPD</a></li>
+                    <li><a href="PPEs/Certifications/Attestation_de_suivi_2.pdf">Module 2 RGPD</a></li>
+                    <li><a href="PPEs/Certifications/Certificat_3.pdf">Module 3 RGPD</a></li>
+                    <li><a href="PPEs/Certifications/Certificat_4.pdf">Module 4 RGPD</a></li>
+                    <li><a href="PPEs/Certifications/Certificat_5.pdf">Module 5 RGPD</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
-    <div class="iframe">
-        <iframe src="" height="800px" width="100%" style="border:none" name="f1"></iframe>
+
+    <div class="recherche">
+        <input type="search" name="search" id="rechercher" placeholder="Rechercher un projet">
+        <button><img src="img/loupe.png"></button>
     </div>
-   
 
 </body>
 </html>
