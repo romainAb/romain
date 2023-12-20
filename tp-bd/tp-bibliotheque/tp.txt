@@ -1,0 +1,87 @@
+1)
+
+SELECT *
+FROM livres
+WHERE Genre='Policier'
+
+2)
+
+SELECT Nom, Prenom
+FROM auteurs
+WHERE Nom LIKE "a%"
+
+3)
+
+SELECT *
+FROM livres
+WHERE Disponibilité=1
+
+4)
+
+SELECT Reference_livre
+FROM livres
+WHERE Nbre_emprunts = 0
+
+5)
+
+SELECT *
+FROM livres
+WHERE Nbre_exemplaire = 5
+
+6)
+
+SELECT *
+FROM livres
+WHERE Etat = 'bon'
+
+7)
+
+SELECT Reference_livre, Genre
+FROM livres
+WHERE date_publication < '#01/01/1990#'
+
+8)
+
+SELECT Reference_livre, Genre
+FROM livres
+WHERE Date_publication BETWEEN 01/01/1980 AND 31/12/1990
+
+9)
+
+SELECT ID_Auteur, Reference_livre
+FROM livres
+WHERE Genre='policier'
+
+10)
+
+SELECT A.*
+FROM Auteurs A
+INNER JOIN livres L on L.ID_Auteur=A.ID_Auteur
+
+
+11)
+
+SELECT A.*
+FROM auteurs A
+INNER JOIN livres L ON L.ID_Auteur=A.ID_Auteur
+WHERE Genre = 'policier'
+
+12)
+
+SELECT Id_emprunt
+FROM emprunts
+WHERE id_Adherent = 12
+
+13)
+
+SELECT *
+FROM emprunts E
+INNER JOIN adherents A ON A.Id_Adherent=E.id_Adherent
+WHERE A.Nom = 'Gaza' AND A.Prenom = 'perdera'
+
+14)
+
+FROM auteur A
+INNER JOIN livre L ON A.ID_Auteur = L.ID_Auteur
+Where Titre_livre ='Reseau informatique'
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="index.js"></script>
+	<title>Index - Mission 7</title>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg">
+        <div class="header_mid">
+            <h2>Nom de la compagnie</h2>
+            <p>Adresse postale</p>
+            <br>
+            <p>Détails du contact</p>
+        </div>
+        <div class="header_right">
+            <h1>FACTURE</h1>
+            <br>
+            <p>26/01/2023</p>
+            <hr>
+            <br>
+            <p>N° de facture</p>
+            <hr>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="info">
+            <section class="gauche">
+                <p class="firstLine"></p>
+                <h3>Destinataire</h3>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </section>
+
+            <section class="droite">
+                <p class="firstLine">Conditions de paiement, par exemple : dû dans X jours</p>
+                <h3>Envoyez à</h3>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </section>
+        </section>
+        
+
+        <section class="facture">
+            <table>
+                <thead>
+                    <td class="col1">DESCRIPTION</td>
+                    <td>QUANTITÉ</td>
+                    <td>PRIX UNITAIRE</td>
+                    <td>TOTAL</td>
+                </thead>
+                <tr class="imp">
+                    <td class="col1">desc1</td>
+                    <td class="result"><input type="number" name="t1.1" id="t1.1" placeholder="0"></td>
+                    <td class="result"><input type="number" name="t1.2" id="t1.2" placeholder="0"></td>
+                    <td class="result"><input type="number" name="tt1" id="tt1" placeholder="0" readonly></td>
+                </tr>
+
+                <tr>
+                    <td class="col1">desc2</td>
+                    <td class="result"><input type="number" name="t2.1" id="t2.1" placeholder="0"></td>
+                    <td class="result"><input type="number" name="t2.2" id="t2.2" placeholder="0"></td>
+                    <td class="result"><input type="number" name="tt1" id="tt2" placeholder="0" readonly></td>
+                </tr>
+
+                <tr class="imp">
+                    <td class="col1">desc3</td>
+                    <td class="result"><input type="number" name="t3.1" id="t3.1" placeholder="0"></td>
+                    <td class="result"><input type="number" name="t3.2" id="t3.2" placeholder="0"></td>
+                    <td class="result"><input type="number" name="tt1" id="tt3" placeholder="0" readonly></td>
+                </tr>
+
+                <tr>
+                    <td class="col1">desc4</td>
+                    <td class="result"><input type="number" name="t4.1" id="t4.1" placeholder="0"></td>
+                    <td class="result"><input type="number" name="t4.2" id="t4.2" placeholder="0"></td>
+                    <td class="result"><input type="number" name="tt1" id="tt4" placeholder="0" readonly></td>
+                </tr>
+
+                <tr class="imp">
+                    <td class="col1">desc5</td>
+                    <td class="result"><input type="number" name="t5.1" id="t5.1" placeholder="0"></td>
+                    <td class="result"><input type="number" name="t5.2" id="t5.2" placeholder="0"></td>
+                    <td class="result"><input type="number" name="tt1" id="tt5" placeholder="0" readonly></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="under_facture">
+            <section class="info">
+                <p>Remarques, notes et instructions de paiement</p>
+            </section>
+
+            <section class="calcul">
+                <table>
+                    <tr>
+                        <td>SOUS-TOTAL</td>
+                        <td class="result"><input type="number" name="calc1" id="calc1" placeholder="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>REMISE</td>
+                        <td class="result"><input type="number" name="calc2" id="calc2" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>SOUS-TOTAL MOINS LES REMISES</td>
+                        <td class="result"><input type="number" name="calc3" id="calc3" placeholder="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>TAUX D'IMPOSITION</td>
+                        <td class="result"><input type="number" name="calc4" id="calc4" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>TAXE TOTALE</td>
+                        <td class="result"><input type="number" name="calc5" id="calc5" placeholder="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>EXPEDITO, MANUTENTION</td>
+                        <td class="result"><input type="number" name="calc6" id="calc6" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>    
+                        <td>SOLDE DU</td>
+                        <td class="result"><input type="number" name="calc7" id="calc7" placeholder="0" readonly></td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        
+
+        <div class="button">
+            <button onclick="calculer()">Calculer</button>
+            <button>Ajouter une ligne</button>
+            <button>Remplir automatiquement</button>
+            <button>Annuler</button>
+        </div>
+    </div>
+
+</body>
+</html>
