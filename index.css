@@ -253,6 +253,12 @@ nav input[type=checkbox]:checked ~ ul{
   border-bottom-right-radius: 50px;
 
   background-color: rgb(231, 231, 231);
+
+  transition: background-color 0.3s ease;
+}
+
+.recherche button:hover{
+  background-color: rgb(204, 204, 204);
 }
 
 .recherche img{
